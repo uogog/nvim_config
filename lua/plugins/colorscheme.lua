@@ -3,13 +3,8 @@
     { "ellisonleao/gruvbox.nvim" },
 
     -- Configure LazyVim to load gruvbox
-    {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "gruvbox",
-        },
-    },
 }]]
+--
 --
 return {
     "taigrr/cyberpunk.nvim",
@@ -22,5 +17,11 @@ return {
         bold_functions = false, -- bold function names
         bold_keywords = true, -- bold keywords (default)
         overrides = {}, -- override specific highlight groups
+    },
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "cyberpunk",
+        },
     },
 }
