@@ -1,12 +1,16 @@
---[[return {
+return {
     -- add gruvbox
     { "ellisonleao/gruvbox.nvim" },
 
     -- Configure LazyVim to load gruvbox
-}]]
---
---
-return {
+    {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "gruvbox",
+        },
+    },
+}
+--[[return {
     "taigrr/cyberpunk.nvim",
     lazy = false,
     priority = 1000,
@@ -18,10 +22,5 @@ return {
         bold_keywords = true, -- bold keywords (default)
         overrides = {}, -- override specific highlight groups
     },
-    {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "cyberpunk",
-        },
-    },
-}
+}]]
+--
